@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+/*
+YAZI TIPLERI 
+font-family: 'Istok Web', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Istok Web', sans-serif;
+}
+.container-p{
+    padding: 20px 100px;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-size: 15px;
+}
+/* Header */
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #e3e3e3;
+}
+#header .input-group{
+    width: 250px;
+}
+#header .logo img{
+    width: 175px;
+    cursor: pointer;
+}
+#header .user{
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+#header .user-img img{
+    width: 75px;
+}
+#header .user-info p{
+    font-size: 16px;
+}
+/* End Header */
+
+/* Navbar */
+#navbar{
+    padding-left: 95px;
+}
+#navbar ul li{
+    padding-right: 15px;
+}
+/* End Navbar */
+
+/* Content */
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #f5f5f5;
+}
+#content .missionsText{
+    text-align: center;
+}
+.missionsBox{
+    box-shadow: 0px 0px 5px 0px rgba(150,150,150,0.7);
+    width: 30%;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+.missionsBox .mission-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 26px 20px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+.missionsBox .mission-item:nth-child(3){
+    border-bottom: none;
+}
+.missionsBox .mission-item h4{
+    font-size: 18px;
+}
+.missionsBox .mission-item p{
+    font-size: 14px;
+    width: 90%;
+}
+.missionsBox .mission-item-btn{
+    text-align: center;
+    font-size: 11px;
+    width: 30%;
+}
+.missionsBox h2{
+    font-size: 22px;
+}
+#content .missionsInfo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+#content .addMissions{
+    display: block;
+}
+#content .addMissions form{
+    padding-top: 5px;
+}
+#content .addMissions input, #content .addMissions select, #content .addMissions textarea{
+    padding: 5px 5px;
+    border: 1px solid #dedede;
+}
+.slider{
+    position: relative;
+}
+.slider img{
+    width: 100%;
+    height: 471px;
+    border-radius: 5px;
+}
+.slider .slider-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    text-align: left;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(41,50,60,1) 32%, rgba(41,50,60,0) 100%);
+}
+.slider .slider-text h2{
+    font-size: 20px;
+    color: #F8F8FF;
+}
+.slider .slider-text p{
+    font-size: 15px;
+    color: #F8F8FF;
+}
+.slider .slider-text .date{
+    font-size: 13px;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+}
+/* End Content */
+
+/* Footer */
+#footer{
+    text-align: center;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+#footer .footer-text{
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+#footer h4{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* End Footer */
+
+/* Mediaquery for Phone */
+@media only screen and (max-width:768px){
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    #header div{
+        margin-bottom: 10px;
+    }
+    #header div:nth-child(3){
+        margin-bottom: 0;
+    }
+    #header .input-group{
+        width: 75%;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 25px 25px;
+    }
+    #content h2{
+        font-size: 20px;
+    }
+    #content p{
+        font-size: 14px;
+    }
+    #content .missionsBox{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #content .missionsBox:nth-child(3){
+        margin-bottom: 0;
+    }
+
+    #footer .footer-text h4{
+        font-size: 12px;
+    }
+}
+/* End Mediaquery for Phone */
+
+/* Mediaquery for Tablets */
+@media (min-width: 768px) and (max-width: 1024px){
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    #header div{
+        margin-bottom: 10px;
+    }
+    #header div:nth-child(3){
+        margin-bottom: 0;
+    }
+    #header .input-group{
+        width: 50%;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #content h2{
+        font-size: 22px;
+    }
+    #content p{
+        font-size: 16px;
+    }
+    #content .missionsBox{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-text h4{
+        font-size: 14px;
+    }
+}
+/* End Mediaquery for Tablets */
+
+/* Mediaquery for Sm Screen */
+@media (min-width: 1025px) and (max-width: 1400px){
+    #content{
+        padding: 50px 20px;
+    }
+    #content .missionsBox{
+        height: 470px;
+        overflow: hidden;
+    }
+    #content .mission-text h4{
+        font-size: 16px;
+    }
+    #content .mission-text p{
+        font-size: 12px;
+    }
+    .missionsBox .mission-item-btn{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+/* End Mediaquery for Sm Screen */
+
+/* Mediaquery for M Screen */
+@media (min-width: 1400px) and (max-width: 1527px){
+    #content .mission-text h4{
+        font-size: 16px;
+    }
+    #content .mission-text p{
+        font-size: 12px;
+    }
+    .missionsBox .mission-item-btn{
+        font-size: 11px;
+        text-align: center;
+    }
+}
+/* End Mediaquery for M Screen */
+
+/* Slider */
+.slide-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+  .prev-arrow{
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #29323c;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+  .next-arrow{
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #29323c;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+/* End Slider */
